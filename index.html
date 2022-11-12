@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Library System</h1>
+
+  <div class="container">
+        <div class="formContainer">
+            <form id="form">
+
+                <div class="form_control">
+                    <label for="firstName">Fitst Name : </label>
+                    <input type="text" name="firstName" id="firstName" placeholder="First Name" maxlength="10" minlength="3">  
+                   <small></small>
+                </div>
+                
+                <div class="form_control">
+                    <label for="lastName">Last Name : </label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Last Name" maxlength="10" minlength="3">   
+                    <small></small> 
+                </div>
+                
+                <div class="form_control">
+                    <label for="email">Email : </label>
+                    <input type="email" name="email" id="email" placeholder="example@email.com" maxlength="120" minlength="6">   
+                    <small></small> 
+                </div>
+                
+                <div class="form_control">
+                    <label for="phone">Phone Number :  </label>
+                    <input type="text" name="phone" id="phone" placeholder="+91-00000-00000" maxlength="16" onkeypress="onlyNumber(event)">   
+                    <small></small> 
+                </div>
+                
+                <div class="form_control">
+                    <label for="address">Address : </label>
+                    <textarea name="address" id="address" cols="30" rows="10" minlength="5" maxlength="500" required></textarea> 
+                    <small></small> 
+                </div>
+                
+                <div class="form_control">
+                    <label for="course">course : </label>
+                    <select name="course" id="course">
+                        <option value="select" selected>--Select--</option>
+                        <option value="12th">12th</option>
+                        <option value="11th">11th</option>
+                        <option value="10th">10th</option>
+                        <option value="9th">9th</option>
+                        <option value="8th">8th</option>
+                    </select>
+                    <small></small> 
+                </div>
+                
+                <div class="form_control">
+                    <label  for="subjects">Subjects : </label>
+                    <span id="subjects"></span>
+                    <input type="checkbox" name="subjects" value="Hindi"> Hindi  
+                    <input type="checkbox" name="subjects" value="English"> English  
+                    <input type="checkbox" name="subjects" value="SST"> SST 
+                    <input type="checkbox" name="subjects" value="Science"> Science   
+                    <input type="checkbox" name="subjects" value="Math"> Math 
+                    <small></small> 
+                </div>
+                
+                <div class="form_control">
+                    <label for="timePeriod">Time Period : </label>
+                    <select name="timePeriod" id="timePeriod" required>
+                        <option value="select" selected>--Select--</option>
+                        <option value="1 day">1 day</option>
+                        <option value="1 week">1 week</option>
+                        <option value="2 days">2 days</option>
+                        <option value="2 week">2 weeks</option>
+                    </select>   
+                    <small></small> 
+                </div>
+                
+                <div class="form_control">
+                    <label for="submissionDate">Submission Date : </label>
+                    <input type="date" name="submissionDate" id="submissionDate" placeholder="dd/mm/yyyy" >
+                    <small></small> 
+                </div>
+            
+
+                <div class="form_control1">
+                    <label></label> 
+                    <input type="submit" id="button" value="submit">
+                </div>
+            
+            </form>
+        </div>
+        <div class="formData">
+            <ul id="result">
+                <span id="firstSpan">Submitted information</span>
+                <li>First Name : <span id="fname1"></span> </li>
+                <li>last Name : <span id="lname1"></span></li>
+                <li>Email : <span id="email1"></span></li>
+                <li>Phone : <span id="phone1"></span></li>
+                <li>Address : <span id="address1"></span></li>
+                <li>Course : <span id="course1"></span></li>
+                <li>Selected Subjects : <span id="subjects1"></span></li>
+                <li>Time Period : <span id="timePeriod1"></span></li>
+                <li>Submission Date : <span id="submissionDate1"></span></li>
+              </ul>
+        </div>
+  </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

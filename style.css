@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    margin: 0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    padding: 10px 20px;
+    background: #000;
+    color: gray;
+    margin-top: 0;
+    text-align: center;
+}
+
+.container{
+    padding: 0 20px;
+}
+
+.formContainer{
+    width:60%;
+    float: left;
+    /* border: 1px solid #000; */
+}
+
+.form_control{
+    margin-bottom: 20px;
+}
+
+.formContainer label{
+    width: 15%;
+    font-size: 13px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.formContainer input{
+    outline: none;
+}
+
+.formContainer select,
+.formContainer input[type=email],
+.formContainer input[type=date],
+.formContainer input[type=text] {
+    width: 80%;
+    padding: 10px;
+}
+
+.formContainer input[type=date]{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.formContainer small{
+    width: 70%;
+    margin-left: 123px;
+    margin-top: 5px;
+    display: block ;
+    visibility: hidden;
+}
+
+.formContainer textarea {
+    vertical-align: top;
+    width: 80%;
+    padding: 10px;
+    
+}
+
+.formContainer #button{
+    width: 80%;
+    padding: 5px;
+    font-size: 17px;
+    color: #fff;
+    background-color: crimson;
+    border: 1px solid crimson;
+    border-radius:5px ;
+}
+
+.form_control.error input{
+    border: 2px solid #B22222;
+
+}
+
+.form_control.error small{
+    color: #B22222;
+    visibility: visible;
+}
+
+
+.form_control.error select,
+.form_control.error textarea{
+    border: 2px solid #B22222;
+}
+
+.form_control.success input{
+    border:2px solid #42ba96;
+}
+
+.form_control.success small{
+    color: #42ba96;
+    visibility: visible;
+}
+
+
+.form_control.success select,
+.form_control.success textarea{
+    border: 2px solid #42ba96;
+}
+
+.formData{
+    width: 40%;
+    float: left;
+}
+
+.formData ul{
+    list-style: none;
+    float: left;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.formData ul li{
+    
+    padding: 10px;
+    border: 1px solid gray;
+    font-weight: bold;
+}
+
+.formData ul li span{
+    font-weight: normal;
+}
+
+.formData ul #firstSpan{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border:1px solid gray;
+    background-color: #F1F1F1;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+
+
+
+
