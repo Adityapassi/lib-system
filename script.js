@@ -6,7 +6,6 @@ let phone = document.getElementById("phone")
 let address = document.getElementById("address")
 let course = document.getElementById("course")
 let timePeriod = document.getElementById("timePeriod")
-let submissionDate = document.getElementById("submissionDate")
 let formcontrol1 =document.querySelector("form_control")
 
 
@@ -28,7 +27,6 @@ form.addEventListener("submit",function(evt){
     let addressValue = address.value
     let courseValue = course.value
     let timePeriodValue = timePeriod.value
-    let submissionDateValue = submissionDate.value
 
  
 
@@ -143,17 +141,6 @@ form.addEventListener("submit",function(evt){
         setSuccess(subject)
           
     }
-    // 
-    if(submissionDateValue===""){
-        setError(submissionDate ,"Please Enter Submission Date ")
-    }
-    // else if(!checkDate(submissionDateValue)){
-    //     setError(submissionDate,"Please Enter a Valid Date")
-    // }
-    else{
-        setSuccess(submissionDate)
-       
-    }
        
    validation()
    
@@ -203,11 +190,7 @@ function setData (count ,sRate ){
        document.querySelector("#course1").textContent = data.get("course")
        document.querySelector("#subjects1").textContent =data.getAll("subjects")
        document.querySelector("#timePeriod1").textContent = data.get("timePeriod")
-       let  date= data.get("submissionDate")
-       let arr = date.split("-")
-       arrRe = arr.reverse()
-      let date1 = arrRe.join("/")
-       document.querySelector("#submissionDate1").textContent = date1
+
        alert("Submitted Sucessfully")
     }
 }
